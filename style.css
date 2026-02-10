@@ -307,4 +307,31 @@ h2 {
   }
 }
 
+/* Map container */
+.map-container {
+  width: 100%;      /* full width by default */
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;      /* fill container width */
+  height: 300px;    /* mobile height */
+  border: 0;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .map-container {
+    width: 50%;      /* half the screen */
+    float: left;     /* optional: floats map left, text can wrap right if needed */
+  }
+
+  .map-container iframe {
+    height: 400px;   /* bigger height for desktop */
+  }
+}
+
 
