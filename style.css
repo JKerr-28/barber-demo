@@ -242,7 +242,6 @@ h2 {
 }
 
 /* Mobile: horizontal scroll */
-/* Mobile: horizontal scroll */
 @media (max-width: 767px) {
   .gallery-grid {
     display: flex;
@@ -250,13 +249,16 @@ h2 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 12px; /* small gap between images */
+    padding-bottom: 10px; /* optional: space for scrollbar */
   }
 
   .gallery-grid img {
-    flex: 0 0 auto;
-    width: 45%;   /* smaller width, fits nicely on screen */
-    max-width: 200px; /* optional: prevents images from being too huge */
-    margin-right: 12px;
+    flex: 0 0 auto;        /* don’t shrink or grow */
+    width: 35%;            /* smaller width for mobile */
+    max-width: 150px;      /* prevents images from being huge */
+    margin-right: 12px;    
     scroll-snap-align: start;
+    border-radius: 8px;
   }
 }
+
