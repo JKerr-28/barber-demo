@@ -188,3 +188,54 @@ h2 {
   display: flex;
   gap: 12px;
 }
+
+/* ABOUT US */
+.about-us {
+  background: #1a1a1a; /* dark gray section */
+  margin: 20px;
+  padding: 25px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.about-us h2 {
+  color: #FFD700; /* yellow heading */
+  margin-bottom: 15px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+.gallery {
+  background: #1a1a1a;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.gallery h2 {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
