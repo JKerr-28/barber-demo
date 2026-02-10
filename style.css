@@ -119,13 +119,6 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
-.logo {
-  max-width: 150px;   /* controls size */
-  height: auto;
-  display: inline-block;
-}
-
 /* Header top layout */
 .header-top {
   display: flex;
@@ -138,7 +131,7 @@ h2 {
 
 /* Logo styling */
 .logo {
-  max-width: 120px; /* logo will shrink on smaller screens */
+  max-width: 200px; /* logo will shrink on smaller screens */
   height: auto;
   display: block;
 }
