@@ -1,1 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #e63946;
+  color: white;
+}
+
+.secondary {
+  background: #25d366;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  background: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* SERVICES */
+.services ul {
+  list-style: none;
+}
+
+.services li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* HOURS */
+.hours p {
+  margin-bottom: 8px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.demo-note {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 15px;
+}
