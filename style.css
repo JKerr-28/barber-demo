@@ -228,6 +228,7 @@ h2 {
   gap: 15px;
 }
 
+/* Gallery images */
 .gallery-grid img {
   width: 100%;
   height: auto;
@@ -238,4 +239,21 @@ h2 {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+
+/* Mobile: horizontal scroll */
+@media (max-width: 767px) {
+  .gallery-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-grid img {
+    flex: 0 0 auto;
+    width: 70%;  /* or adjust as needed */
+    margin-right: 15px;
+    scroll-snap-align: start;
+  }
 }
