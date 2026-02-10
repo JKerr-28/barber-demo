@@ -242,18 +242,21 @@ h2 {
 }
 
 /* Mobile: horizontal scroll */
+/* Mobile: horizontal scroll */
 @media (max-width: 767px) {
   .gallery-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    gap: 12px; /* small gap between images */
   }
 
   .gallery-grid img {
     flex: 0 0 auto;
-    width: 70%;  /* or adjust as needed */
-    margin-right: 15px;
+    width: 45%;   /* smaller width, fits nicely on screen */
+    max-width: 200px; /* optional: prevents images from being too huge */
+    margin-right: 12px;
     scroll-snap-align: start;
   }
 }
