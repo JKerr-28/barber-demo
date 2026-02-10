@@ -119,19 +119,20 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 /* Header top layout */
 .header-top {
   display: flex;
   align-items: center;
-  justify-content: center; /* default: center on mobile */
+  justify-content: center; /* center on mobile */
   gap: 20px;               /* space between logo and headline */
-  flex-wrap: wrap;          /* allows stacking on small screens */
+  flex-direction: column;   /* stack logo and headline on mobile */
   margin-bottom: 20px;
 }
 
 /* Logo styling */
 .logo {
-  max-width: 200px; /* logo will shrink on smaller screens */
+  max-width: 250px;  /* larger logo */
   height: auto;
   display: block;
 }
@@ -141,15 +142,19 @@ h2 {
   font-size: 2.2rem;
   color: #FFD700; /* yellow headline */
   text-align: center; /* center on mobile */
+  margin-top: 15px;  /* spacing when stacked */
 }
 
-/* Media query for desktop screens */
+/* Desktop layout */
 @media (min-width: 768px) {
   .header-top {
-    justify-content: flex-start; /* logo + headline aligned left */
+    flex-direction: row;      /* logo + headline side by side */
+    justify-content: flex-start; /* align left */
+    gap: 40px;                /* more space between logo and headline */
   }
 
   .header-top h1 {
     text-align: left;
+    margin-top: 0; /* remove spacing when side by side */
   }
 }
