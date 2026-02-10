@@ -254,7 +254,7 @@ h2 {
 
   .gallery-grid img {
     flex: 0 0 auto;        /* don’t shrink or grow */
-    width: 35%;            /* smaller width for mobile */
+    width: 45%;            /* smaller width for mobile */
     max-width: 150px;      /* prevents images from being huge */
     margin-right: 12px;    
     scroll-snap-align: start;
