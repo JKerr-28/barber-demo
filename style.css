@@ -6,14 +6,14 @@
 }
 
 body {
-  background: #f7f7f7;
-  color: #222;
+  background: #111; /* black page background */
+  color: #fff;      /* white text */
   line-height: 1.6;
 }
 
 /* HERO */
 .hero {
-  background: #111;
+  background: #111;  /* black */
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -22,11 +22,13 @@ body {
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
+  color: #FFD700; /* yellow headline */
 }
 
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 25px;
+  color: #fff;
 }
 
 .buttons {
@@ -42,21 +44,30 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 .primary {
-  background: #e63946;
+  background: #e63946; /* red */
   color: white;
 }
 
+.primary:hover {
+  background: #b32a38; /* darker red on hover */
+}
+
 .secondary {
-  background: #25d366;
-  color: white;
+  background: #FFD700; /* yellow */
+  color: black;
+}
+
+.secondary:hover {
+  background: #e6c200; /* darker yellow on hover */
 }
 
 /* SECTIONS */
 section {
-  background: white;
+  background: #1a1a1a; /* dark gray section background */
   margin: 20px;
   padding: 25px;
   border-radius: 8px;
@@ -64,6 +75,7 @@ section {
 
 h2 {
   margin-bottom: 15px;
+  color: #FFD700; /* yellow headings */
 }
 
 /* SERVICES */
@@ -75,12 +87,20 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333; /* subtle line */
+  color: #fff;
 }
 
 /* HOURS */
 .hours p {
   margin-bottom: 8px;
+}
+
+/* MAP */
+.map {
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* CTA */
@@ -93,10 +113,4 @@ h2 {
   font-size: 0.85rem;
   color: #777;
   margin-top: 15px;
-}
-
-.map {
-  margin-top: 15px;
-  border-radius: 8px;
-  overflow: hidden;
 }
